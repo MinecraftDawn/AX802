@@ -25,3 +25,19 @@ class LinkingList:
         while run.next:
             run = run.next
         run.next = Node(value)
+        
+    def delete(self, value):
+        pre = self.head
+        run = self.head.next
+        
+        while run:
+            if run.value == value:
+                pre.next = run.next
+                run = run.next
+            else:
+                pre = pre.next
+                run = run.next
+        
+        
+        
+        
