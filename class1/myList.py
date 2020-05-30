@@ -39,5 +39,13 @@ class LinkingList:
                 run = run.next
         
         
-        
-        
+    def search(self, num):
+        run = self.head.next
+
+        while run:
+            if run.value == num:
+                return True
+
+            run = run.next
+
+        return False

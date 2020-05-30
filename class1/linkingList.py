@@ -11,6 +11,6 @@ myList = myList.LinkingList()
 myList.trace()
 for i in range(10):
     myList.append(i)
-myList.delete(5)
-myList.trace()
 
+
+print(myList.search(-1))
